@@ -1,5 +1,6 @@
 theme: jekyll-theme-cayman
 title: My tryst with AI/ML Journey
+description: Blog sharing my experiences & experiments in learning ML from scratch
 baseurl: /TPE
 github:
   is_project_page: false
