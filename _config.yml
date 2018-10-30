@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
 title: My tryst with AI/ML Journey
+baseurl: /TPE
 github:
   is_project_page: false
