@@ -1,4 +1,19 @@
-## Welcome to My blog on AI/ML learning journey
+---
+layout: default
+title: Blog
+---
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- ## Welcome to My blog on AI/ML learning journey
 
 You can use the [editor on GitHub](https://github.com/celiberate/TPE/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -35,3 +50,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ -->
