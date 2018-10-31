@@ -3,9 +3,9 @@ layout: post
 author: shivam
 title: Learning ML - Prerequisites
 ---
-Standard deviation, eigenValues, patial derivatives...When was the last time you encountered these words. For someone like me whose previous encounter with these Mathematics and Statistics topics, were more than a decade back, even getting started with learning ML first required lot of groundwork and cleaning up the dust settled on those high school maths and statistics concepts.
+Standard deviation, eigenValues, patial derivatives...When was the last time you encountered these words. For someone like me whose previous encounter with these Mathematics and Statistics topics, were more than a decade back, even getting started with learning ML, required a lot of groundwork and cleaning up the dust settled on those high school maths and statistics concepts.
 
-Unlike learning a new language or a framework, where we take a clean slate and start with writing a "Hello World" program or steps to build, in the case of ML, I was not even sure where & how to begin with. Because ML will require you to have a good understanding of
+Unlike learning a new language or a framework, where you straightaway jump to writing a "Hello World" program or writing commands to create and build, in the case of ML, the first major challenge is to identify where & how to begin with. Because ML will require you to have a fair understanding of
 
 1. Linear Algebra
 2. Calculus
@@ -18,8 +18,30 @@ Unlike learning a new language or a framework, where we take a clean slate and s
 9. ....
 10. & many more
 
+If you come with programming and development background, Often the desire is to jump to coding and see real action and you make a google search on machine learning poblems & implementation say Linear Regression, and you get a few lines of python code which does it for you
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn import datasets, linear_model
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Create linear regression object
+regr = linear_model.LinearRegression()
+
+# Train the model using the training sets
+regr.fit(X_DATA, Y_DATA)
+
+# Make predictions using the testing set
+Y_PREDICTION = regr.predict(X_TEST_DATA)
+
+}
+```
+
+Till you have background knowledge of what is meant by linear regression and which in-turn require you to have understanding of terms like Variance, Mean and MeanSquareError, you will keep wondering why a linear regression algorithm was applied to a particular problem and whether that was the right solution
+
 so my pre-requisite for beginners for learning ML is fairly simple
 - **Come out of Comfort Zone**
 - **Be physical fit** (it will require a lot of mental strength)
 
-Rest all skills you can acquire over the journey as you deep dive in this mammoth world of Machine Learning. One thing is for sure, no matter whether machine learns or not, you will enjoy getting back to school days and revisiting fundamental topics of vectors, matrices, permutations, mean, medians...
+Rest all skills you can acquire over the journey as you deep dive in this mammoth world of Machine Learning. One thing is for sure, no matter whether machine learns or not, you will enjoy getting back to school days and revisiting fundamental topics of vectors, matrices, permutations, mean, medians...& many more.
