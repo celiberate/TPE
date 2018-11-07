@@ -1,3 +1,8 @@
+---
+layout: post
+author: Shivam Sinha
+title: Linear Regression
+---
 
 Linear Regression is often the first algorithm which you will find in ML books or courses. 
 
