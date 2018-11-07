@@ -5,7 +5,7 @@ title: Learning ML - Prerequisites
 ---
 Standard deviation, eigenValues, patial derivatives...When was the last time you encountered these words. For someone like me whose previous encounter with these Mathematics and Statistics topics, were more than a decade back, even getting started with learning ML, required a lot of groundwork and cleaning up the dust settled on those high school maths and statistics concepts.
 
-Unlike learning a new language or a framework, where you straightaway jump to writing a "Hello World" program or writing commands to create and build, in the case of ML, the first major challenge is to identify where & how to begin with. Because ML will require you to have a fair understanding of
+Unlike learning a new language or a framework, where you straightaway jump to writing a "Hello World" program or executing commands to build and run, in the case of ML, the first major challenge is to identify where & how to begin with. Because ML will require you to have a fair understanding of
 
 1. Linear Algebra
 2. Calculus
@@ -38,7 +38,7 @@ Y_PREDICTION = regr.predict(X_TEST_DATA)
 }
 ```
 
-Till you have background knowledge of what is meant by linear regression and which in-turn require you to have understanding of terms like Variance, Mean and MeanSquareError, you will keep wondering why a linear regression algorithm was applied to a particular problem and whether that was the right solution
+However, until you have background knowledge of concepts and logic behind linear regression algorithm and which in turn will require you to be aware of statistic concepts like variance or covariance , you will struggle to relate why linear regression algorithm was applied to a particular problem and how it derived the solution.
 
 so my pre-requisite for beginners for learning ML is fairly simple
 - **Come out of Comfort Zone**
