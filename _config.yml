@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 title: My tryst with AI/ML Journey
 description: Blog sharing my experiences & experiments in learning ML from scratch
-baseurl: /TPE
+baseurl:
 google_analytics: UA-128434218-1
 github:
   is_project_page: false
