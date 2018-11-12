@@ -1,7 +1,8 @@
 ---
 layout: post
-author: shivam
+author: Shivam Sinha
 title: Learning ML - Prerequisites
+description: Getting started with Machine Learning - Basics
 ---
 Standard deviation, eigenValues, patial derivatives...When was the last time you encountered these words. For someone like me whose previous encounter with these Mathematics and Statistics topics, were more than a decade back, even getting started with learning ML, required a lot of groundwork and cleaning up the dust settled on those high school maths and statistics concepts.
 

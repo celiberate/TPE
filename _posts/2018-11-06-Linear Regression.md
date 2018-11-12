@@ -2,6 +2,8 @@
 layout: post
 author: Shivam Sinha
 title: Linear Regression
+description: Linear Regression for Supervised Learning - Part 1
+comments: true
 ---
 
 Linear Regression is often the first algorithm which you will find in ML books or courses. 
