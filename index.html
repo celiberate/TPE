@@ -2,15 +2,12 @@
 layout: default
 title: Blog
 ---
-<h1>Beat the data until it spits what you want to learn</h1>
-
 <ul>
   {% for post in site.posts %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <p>{{ post.excerpt }}</p>
+      <h3><i>{{post.quote}}</i></h3>
     </li>
   {% endfor %}
 </ul>
-
-<h1>Data is the new oil with only exception more you consume better it is</h1>

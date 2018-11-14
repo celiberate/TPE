@@ -4,6 +4,7 @@ author: Shivam Sinha
 title: Learning ML - Prerequisites
 description: Getting started with Machine Learning - Basics
 comments: true
+quote: Beat the data until it spits what you want to learn
 ---
 Standard deviation, eigenValues, patial derivatives...When was the last time you encountered these words. For someone like me whose previous encounter with these Mathematics and Statistics topics, were more than a decade back, even getting started with learning ML, required a lot of groundwork and cleaning up the dust settled on those high school maths and statistics concepts.
 
@@ -40,10 +41,11 @@ Y_PREDICTION = regr.predict(X_TEST_DATA)
 }
 ```
 
-However, until you have background knowledge of concepts and logic behind linear regression algorithm and which in turn will require you to be aware of statistic concepts like variance or covariance , you will struggle to relate why linear regression algorithm was applied to a particular problem and how it derived the solution.
+However, To have an understanding and build a Machine Learning model for your dataset, will require you to be first clear with the mathematical concepts behind those algorithms, without which you will just be hitting in the dark. so, till you understand that geometric view of a linear euation is a line and a quadratic equation is a parabola, you will keep wondering why derivative of cost function of linear regression model gives the minima.
 
 so my pre-requisite for beginners for learning ML is fairly simple
 - **Come out of Comfort Zone**
-- **Be physical fit** (it will require a lot of mental strength)
+- **Remain motivated, as there will be many failures**
+- **And above all, Be physically fit** (as it will require a lot of mental strength to take all this in)
 
 Rest all skills you can acquire over the journey as you deep dive in this mammoth world of Machine Learning. One thing is for sure, no matter whether machine learns or not, you will enjoy getting back to school days and revisiting fundamental topics of vectors, matrices, permutations, mean, medians...& many more.

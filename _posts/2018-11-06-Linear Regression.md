@@ -4,9 +4,9 @@ author: Shivam Sinha
 title: Linear Regression
 description: Linear Regression for Supervised Learning - Part 1
 comments: true
+quote: Data is the new oil with the only exception being, more you consume better it is
 ---
-
-Linear Regression is often the first algorithm which you will find in ML books or courses. 
+Linear models are often the introductory model that one begin with and one of the reason being it is easier to visualize than complex curves and can be easily projected.
 
 **Linear Regression** is a type of _Supervised_ Machine Learning algorithm where goal is to develop  a model to predict the value of a dependent variable, given a set of independent variables.
 
@@ -14,7 +14,7 @@ Lets understand this further
 
 **Supervised Learning** - Means both input (which is set of independent variables) and output (which is dependent variable) is used to develop (train & test) the predictive model. Since the task is to predict value of a continous variable (and not discrete variable), this is termed as Regression problem.
 
-**Independent Variables** - Features X1, X2, X3...Xn which are independent and are not correlated
+**Independent Variables** - Features (or Predators) X1, X2, X3...Xn which are independent and are not correlated
 
 **Dependent Variable** - Target Output Variable Y where Y = wo + w1X1 + w2X2 + ... + wnXn.
  wo,w1...wn are co-efficients or weights.
