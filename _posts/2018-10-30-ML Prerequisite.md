@@ -21,6 +21,9 @@ Unlike learning a new language or a framework, where you straightaway jump to wr
 9. ....
 10. & many more
 
+![introduction](/assets/intro.png)
+
+
 If you come with programming and development background, Often the desire is to jump to coding and see real action and you make a google search on machine learning poblems & implementation say Linear Regression, and you get a few lines of python code which does it for you
 
 ```

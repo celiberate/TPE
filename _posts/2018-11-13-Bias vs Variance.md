@@ -13,7 +13,11 @@ quote: If you torture data long enough it will confess
 
  When your model predicts in a very generalized manner and pays little attention to data, you call your model to be over-simplified and not capturing true relationship(biased), this is known as under-fitting.
 
- An ideal model should find the right balance between over-fitting (high variance) and under-fitting(high-bias) by consistent predictions with different datasets and capturing true relationship with the data.
+ An ideal model should find the right balance between over-fitting (high variance) and under-fitting(high-bias) by consistent predictions with different datasets and capturing true relationship with the data. The goal of any supervised machine learning algorithm is to achieve low-bias and low-variance.
+
+ Overfitting results in low training error and high test error, while underfitting results in high errors in both the training and test set.
+
+ **Cross-Validations**
 
 
 

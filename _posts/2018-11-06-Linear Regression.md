@@ -73,9 +73,17 @@ Again, this may not be ideal because large and small errors are penalized equall
 
 ![MSE](/assets/LinearRegression/LR_Latex_P10.jpg)
 
-Now that we have identified our Cost function f(x) to be MSE, We need to find an optimum point x for which our f(x) is minimized. Because it is a quadratic equation , we know its line will be a parabola and we need to identify the point where slope (derivative of f(x)) is equal to zero.
+Now that we have identified our Cost function f(x) to be MSE, We need to find an optimum point x for which our f(x) is minimized. 
+
+## Ordinary Least Square Method
+
+Because our cost function f(x) is a quadratic equation , we know its line will be a parabola and we need to identify the point where slope (derivative of f(x)) is equal to zero. We will take partial derivative of our cost function f(x) w.r.t weights w0, w1,..wn and equate it to 0 to get a system of n-linear equations with n-unknowns. 
+
 
 ## Gradient Descent of MSE
+Performing OLS method is extremely expensive to compute when you have a large set of features and sample (imagine 10000 features and 1000000 records)
+
+Computationally, a better approach is to perform iterative computation using Gradient descent.
 
 Gradient Descent is an optimization algorithm to identify minima of our cost function incrementally. Basically, We begin with an initial value of w0,w1...wn and identify whether slope of our function is positive or negative for those values. If slope is negative, we know parabola is going downward and we update next iteration values of w0, w1...wn by
 
