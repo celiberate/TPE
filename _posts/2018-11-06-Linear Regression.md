@@ -53,7 +53,7 @@ $$
 \hat{Y} = X . {W}^T 
 $$
 
-where, W is a row vector of coefficients
+where, W is a row vector of coefficients <br>
 X is a mXn matrix - m data samples with n features (X0 = 1)
 
 $$
@@ -148,9 +148,14 @@ R-squared = Explained variation / Total variation
 
 It basically tells you how close the data points are to your regression line.
 
-### However, there is a problem with R^2 values?
+However there are some obvious problems with R-squared metrices
 
-In my next blog, I will cover on why R^2 may not be the correct metric for measuring accuracy of linear regression model always and we can instead go for other metrics like R^2 Adjusted.
+1. R-Square keeps on increasing as you add more features, which may not be the case always. so a model with more features always appear to better fit.
+2. If a model has high-order polynomials, It begins to model the random noise in the data and starts overfitting the model
+
+### Underfitting & Overfitting
+
+What happens if my model has very high accuracy on training data but not so much on test data. We need to understand the concept of Overfitting and Underfitting models, which I will cover in my next blog.
 
 {% if page.hasregex %}
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
