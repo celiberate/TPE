@@ -5,6 +5,7 @@ title: Linear Regression
 description: Linear Regression for Supervised Learning - Part 1
 comments: true
 quote: Data is the new oil with the only exception being, more you consume better it is
+hasregex: true
 ---
 Linear models are often the introductory model that one begin with and one of the reason being it is easier to visualize than complex curves and can be easily projected.
 
@@ -12,7 +13,7 @@ Linear models are often the introductory model that one begin with and one of th
 
 Lets understand this further
 
-**Supervised Learning** - Means both input (which is set of independent variables) and output (which is dependent variable) is used to develop (train & test) the predictive model. Since the task is to predict value of a continous variable (and not discrete variable), this is termed as Regression problem.
+**Supervised Learning** - Means both input (which is set of independent variables) and output (which is dependent variable) is used to develop (train & test) the predictive model. Since the task is to predict value of a continous variable (and not discrete variable), this is termed as **Regression** problem.
 
 **Independent Variables** - Features (or Predators) X1, X2, X3...Xn which are independent and are not correlated
 
@@ -37,14 +38,39 @@ so summarizing our problem definition in language of Machine learning,
 
 ## Line of Best Fit
 
-Remember, equation for a line in 2-D plane is represented as y = mx + c, where m is the slope, c is the intercept and x,y are the independent and dependent variables respectively.
+Remember, equation for a line in X-Y plane is represented as y = mx + c, where m is the slope, c is the intercept and x,y are the independent and dependent variables respectively.
 
-so equation for our linear regression model will be 
+so equation for our linear regression model will be <br> 
+$$ 
+\hat{Y} = w0 + w1X1 + w2X2 + ... + wnXn 
+$$
+<br><br>    where, $$ \hat{Y} $$ is the predicted value of Y.
+<br>    X1, X2,...Xn are the feature sets 
+<br>    w0,w1,..wn are the coefficients (or weights) of each feature
 
-![Best Fit Line](/assets/LinearRegression/LR_Latex_P5.jpg)
+This can also be represented in a Matrix form as
+$$
+\hat{Y} = X . {W}^T 
+$$
+
+where, W is a row vector of coefficients
+X is a mXn matrix - m data samples with n features (X0 = 1)
+
+$$
+W = \begin{bmatrix}w0 & w1 & w2 & wn\end{bmatrix}
+$$
+
+$$
+X = \begin{bmatrix}X0^0 & X1^0 & X2^0 & Xn^0\\X0^1 & X1^1 & X2^1 & Xn^1\\
+X0^m & X1^m & X2^m & Xn^m
+\end{bmatrix}
+
+$$
+
+
+<!-- ![Best Fit Line](/assets/LinearRegression/LR_Latex_P5.jpg) -->
 
 and our goal is to predict w0,w1...wn that gives us the best line to fit our data
-
 
 ![Best Fit Line 2](/assets/LinearRegression/LinearRegression_P4.jpg)
 
@@ -53,31 +79,50 @@ and our goal is to predict w0,w1...wn that gives us the best line to fit our dat
 Basically, We need to identify a Cost function (or Loss function) through which we can measure error between our predicted values and actual values. And the line which gives us the least error will be the best line and the coefficients of that line will be our solution
 
 
- - Approach 1 - Residual Sum Loss i.e. sum of errors E where Ei = Predicted Value of Yi - Actual Value of Yi 
+ - Approach 1 - Residual Sum Loss i.e. sum of errors E where Ei is the error in the ith Sample (Predicted Value of Yi - Actual Value of Yi)
+ 
+$$
+E = \sum_{i=1}^{m}(\hat{Y}_i - Y_i)
+$$
 
-![Sum of Square](/assets/LinearRegression/LR_Latex_P7.jpg)
+<!-- ![Sum of Square](/assets/LinearRegression/LR_Latex_P7.jpg) -->
 
-However, here the problem is that positive and negative errors will cancel out.
+However, here the problem is that positive and negative errors in our prediction will cancel out.
 
-- Approach 2 - Take Absolute value of residual sum from Approach 1.
+- Approach 2 - Take Absolute value of residual sum from earlier approach
 
-![Absolute Sum of Residuals](/assets/LinearRegression/LR_Latex_P8.jpg)
+$$
+E = \sum_{i=1}^{m}|(\hat{Y}_i - Y_i)|
+$$
+
+<!-- ![Absolute Sum of Residuals](/assets/LinearRegression/LR_Latex_P8.jpg) -->
 
 Again, this may not be ideal because large and small errors are penalized equally
 
 - Approach 3 - We take Residual Sum of Squares so that we penalize large errors more.
 
-![RSS](/assets/LinearRegression/LR_Latex_P9.jpg)
+$$
+E = \sum_{i=1}^{m}(\hat{Y}_i - Y_i)^2
+$$
+
+<!-- ![RSS](/assets/LinearRegression/LR_Latex_P9.jpg) -->
 
 - Approach 4 - Even better approach will be if we take **Mean Square Error (MSE)** where we take mean of RSS (Residual Sum of Squares)
 
-![MSE](/assets/LinearRegression/LR_Latex_P10.jpg)
+$$
+MSE = \frac{1}{m}\sum\limits_{i=1}^{m}(\hat{Y}_i - Y_i)^2
+$$
+
+
+<!-- ![MSE](/assets/LinearRegression/LR_Latex_P10.jpg) -->
 
 Now that we have identified our Cost function f(x) to be MSE, We need to find an optimum point x for which our f(x) is minimized. 
 
 ## Ordinary Least Square Method
 
-Because our cost function f(x) is a quadratic equation , we know its line will be a parabola and we need to identify the point where slope (derivative of f(x)) is equal to zero. We will take partial derivative of our cost function f(x) w.r.t weights w0, w1,..wn and equate it to 0 to get a system of n-linear equations with n-unknowns. 
+Because our cost function f(x) is a quadratic equation, we know this will be a parabola once plotted. we need to identify the point where error is minimum, that is  global minima of parablola. This is the point where slope (derivative of f(x)) is equal to zero.
+
+We will take partial derivative of our cost function f(x) w.r.t weights w0, w1,..wn and equate it to 0 to get a system of n-linear equations with n-unknowns. 
 
 
 ## Gradient Descent of MSE
@@ -87,7 +132,11 @@ Computationally, a better approach is to perform iterative computation using Gra
 
 Gradient Descent is an optimization algorithm to identify minima of our cost function incrementally. Basically, We begin with an initial value of w0,w1...wn and identify whether slope of our function is positive or negative for those values. If slope is negative, we know parabola is going downward and we update next iteration values of w0, w1...wn by
 
-![GD of MSE](/assets/LinearRegression/LR_Latex_P11.jpg)
+$$
+\begin{align*} \text{repeat until convergence: } \lbrace & \newline w_0 := & w_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m}(h_w(x_{i}) - y_{i}) \newline w_1 := & w_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m}\left((h_w(x_{i}) - y_{i}) x_{i}\right) \newline \rbrace& \end{align*}
+$$
+
+<!-- ![GD of MSE](/assets/LinearRegression/LR_Latex_P11.jpg) -->
 
 ##  Performance - How do we measure accuracy of our Linear Regression Model
 
@@ -103,7 +152,9 @@ It basically tells you how close the data points are to your regression line.
 
 In my next blog, I will cover on why R^2 may not be the correct metric for measuring accuracy of linear regression model always and we can instead go for other metrics like R^2 Adjusted.
 
-
+{% if page.hasregex %}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}
 
 
 
