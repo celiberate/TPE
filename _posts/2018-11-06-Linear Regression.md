@@ -17,9 +17,7 @@ Lets understand this further
 
 **Independent Variables** - Features (or Predators) X1, X2, X3...Xn which are independent and are not correlated
 
-**Dependent Variable** - Target Output Variable Y where Y = wo + w1X1 + w2X2 + ... + wnXn.
- wo,w1...wn are co-efficients or weights.
-
+**Dependent Variable** - Target Output Variable Y
 
 ![Initial Dataset](/assets/LinearRegression/LinearRegression_P1.png)
 
