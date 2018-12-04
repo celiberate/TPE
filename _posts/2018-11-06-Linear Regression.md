@@ -156,7 +156,7 @@ However there are some obvious problems with R-squared metrices
 What happens if my model has very high accuracy on training data but not so much on test data. We need to understand the concept of Overfitting and Underfitting models, which I will cover in my next blog.
 
 {% if page.hasregex %}
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
 
 
