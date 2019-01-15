@@ -6,8 +6,9 @@ comments: true
 quote: Beat the data until it spits what you want to learn
 image:
     teaser: assets/gettingstarted.jpg
+    feature: feature.jpg
 ---
-!! Beat the data until it spits what you want to learn !!
+<i>{{ page.quote }}</i>
 
 Being a mobile app developer, I had been involved in creating rich engaging User experience applications. As a frontend developer, I was not too worried about data storage and processing. All the data exchange used to happen through APIs, which were designed to serve limited and concise data for end-users. The primary reason being, mobile devices having a limited real estate and processing capabilities, is not advisable to do computationally expensive operations on mobile for best user experience.
 

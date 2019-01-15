@@ -4,7 +4,7 @@ author: Shivam Sinha
 title: Bias vs Variance
 description: Understanding concept of Bias and Variance in ML Models
 comments: true
-quote: If you torture data long enough it will confess
+quote: “Numbers have an important story to tell. They rely on you to give them a voice.” — Stephen Few
 ---
 Hyperparameters - Hyperparameters are the parameters that are used to tune the performance of our model.
 
