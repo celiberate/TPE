@@ -5,7 +5,7 @@ description: "My tryst with AI and ML learning journey"
 logo: # 120x120 px default image used for Twitter summary card
 teaser: teaser.jpg # 400x250 px default teaser image used in image archive grid
 locale: en
-url:
+url: blog.celiberate.com/tpe/
 feed:
   path: atom.xml
 
