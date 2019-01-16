@@ -50,7 +50,7 @@ There is still a long way to go, as developing enterprise level Machine Learning
 
 
 
-![introduction](/images/assets/intro.png)
+![introduction]({{site.url}}/images/assets/intro.png)
 
 ### Exploratory Data Analysis
 

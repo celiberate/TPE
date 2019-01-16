@@ -67,7 +67,7 @@ h_\theta(x) = g(z) = \frac{1}{1 + e^-z}
 z = X.\theta^T \in \{-\infty,\infty\}, y \in \{0,1\}
 $$
 
-![Sigmoid Function](/images/assets/LogisticRegression/sigmoid.png)
+![Sigmoid Function]({{site.url}}/images/assets/LogisticRegression/sigmoid.png)
 
 ```
 If p = Probability of success,
@@ -95,7 +95,7 @@ Consider these two scenarios
 
 | Cost fn for Y = 1 | Cost fn for Y = 0|
 |-------|--------|---------|
-| ![cf0 Function](/images/assets/LogisticRegression/cf0.png) | ![cf1 Function](/images/assets/LogisticRegression/cf1.png) | 
+| ![cf0 Function]({{site.url}}/images/assets/LogisticRegression/cf0.png) | ![cf1 Function]({{site.url}}/images/assets/LogisticRegression/cf1.png) | 
 |-------|--------|---------|
 | $$ -log(\frac{1}{1+e^-z}) $$ | $$ -log(\frac{e^-z}{1+e^-z}) $$ | 
 
@@ -140,7 +140,7 @@ __Here $$\alpha$$ is Learning Rate __
 Unlike evaluating the accuracy of Regression model where we predicting continous or discrete dependent variable,evaluating accuracy of a classification model is bit tricky. Before we understand how is accuracy measured, we need to understand below confusion matrix
 
 
-![cm Function](/images/assets/LogisticRegression/confusionmatrix.png)
+![cm Function]({{site.url}}/images/assets/LogisticRegression/confusionmatrix.png)
 
 
 **True Positive**: We predicted correctly as a Postive class (P:1,A:1)
