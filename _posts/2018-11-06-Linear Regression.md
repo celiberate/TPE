@@ -1,15 +1,16 @@
 ---
 layout: article
-author: Shivam Sinha
 title: Linear Regression
-description: Linear Regression for Supervised Learning - Part 1
+description: Linear Regression for Supervised Learning
 comments: true
 quote: In ML, Its not who has the best algorithm that wins, its who has the most data.
 hasregex: true
 image:
-    teaser: teaser.png
+    teaser: teaser.jpg
     feature: feature.jpg
 ---
+<i>{{ page.quote }}</i>
+
 Linear models are often the introductory model that one begin with and one of the reason being it is easier to visualize than complex curves and can be easily projected.
 
 **Linear Regression** is a type of _Supervised_ Machine Learning algorithm where goal is to develop  a model to predict the value of a dependent variable, given a set of independent variables.
@@ -24,12 +25,12 @@ Lets understand this further
 
 Look at this dataset of Happiness Rank vs Happiness Score of countries
 
-![Initial Dataset](/assets/LinearRegression/LinearRegression_P1.png)
+![Initial Dataset]({{site.url}}/images/assets/LinearRegression/LinearRegression_P1.png)
 
 In the above dataset, Happiness Rank is the independent variable (X feature) and Happiness Score is the dependent variable ( Y variable)
 
 If you plot this data on a scatter plot, this is how it looks like
-![Initial ScatterPlot](/assets/LinearRegression/LinearRegression_P2.jpg)
+![Initial ScatterPlot]({{site.url}}/images/assets/LinearRegression/LinearRegression_P2.jpg)
 
 so summarizing our problem definition in language of Machine learning,
 
@@ -75,9 +76,9 @@ $$
 
 and our goal is to predict w0,w1...wn that gives us the best line to fit our data
 
-![Best Fit Line 2](/assets/LinearRegression/LinearRegression_P4.jpg)
+![Best Fit Line 2]({{site.url}}/images/assets/LinearRegression/LinearRegression_P4.jpg)
 
-### How we will come to know if the line is the best fit line
+## How we will come to know if the line is the best fit line
 
 Basically, We need to identify a Cost function (or Loss function) through which we can measure error between our predicted values and actual values. And the line which gives us the least error will be the best line and the coefficients of that line will be our solution
 
@@ -147,7 +148,7 @@ R^2 - R-squared is a statistical measure of how close the data are to the fitted
 
 R-squared = Explained variation / Total variation
 
-![GD of MSE](/assets/LinearRegression/LR_Latex_P12.jpg)
+![GD of MSE]({{site.url}}/images/assets/LinearRegression/LR_Latex_P12.jpg)
 
 It basically tells you how close the data points are to your regression line.
 

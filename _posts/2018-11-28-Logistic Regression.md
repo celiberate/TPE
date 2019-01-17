@@ -1,6 +1,5 @@
 ---
 layout: article
-author: Shivam Sinha
 title: Logistic Regression
 description: A Supervised Machine Learning Algorithm for Classification
 comments: true
@@ -137,34 +136,35 @@ __Here $$\alpha$$ is Learning Rate __
 
 #### Confusion Matrix
 
-Unlike evaluating the accuracy of Regression model where we predicting continous or discrete dependent variable,evaluating accuracy of a classification model is bit tricky. Before we understand how is accuracy measured, we need to understand below confusion matrix
+Unlike evaluating the accuracy of Regression model where we predict continous or discrete dependent variable,evaluating accuracy of a classification model is bit tricky. Before we understand how is accuracy measured, we need to understand below confusion matrix
 
-
+ - **Confusion Matrix**
+  
 ![cm Function]({{site.url}}/images/assets/LogisticRegression/confusionmatrix.png)
 
 
-**True Positive**: We predicted correctly as a Postive class (P:1,A:1)
-**False Positive**: We predicted incorrectly as a Positive class (P:1,A:0)
-**True Negative**: We predicted correctly as a Negative class (P:0,A:0)
-**False Negative**: We predicted incorrectly as a Negative class (P:0;A:1)
+**True Positive**: We predicted correctly as a Postive class (P:1,A:1)<br>
+**False Positive**: We predicted incorrectly as a Positive class (P:1,A:0)<br>
+**True Negative**: We predicted correctly as a Negative class (P:0,A:0)<br>
+**False Negative**: We predicted incorrectly as a Negative class (P:0;A:1)<br>
 
 Our goal should be predict such that FP and FN values are as lower as possible.
 
-**Accuracy** is the measure of how many correct predictions we made out of total predictions
+- **Accuracy** is the measure of how many correct predictions we made out of total predictions
 
 Accuracy = (TP + TN) / (TP + TN + FP + FN)
 
 This is good, if we have a balanced dataset with almost equal distribution of positive and negative cases. However, for imbalanced datasets, Accuracy may not be the ideal metric.
 
-**Precision** or Positive Prediction Rate is the ratio of correct predictions made out of total positive predictions
+- **Precision** or Positive Prediction Rate is the ratio of correct predictions made out of total positive predictions
 
 Precision = TP / TP + FP
 
-**Sensitivity** or Recall or True Positive Rate is the ratio of correct predictions of actual positive cases
+- **Sensitivity** or Recall or True Positive Rate is the ratio of correct predictions of actual positive cases
 
 Recall = TP / TP + FN
 
-**Specificity** or True Negative Rate is the ratio of correct predictions of actual negative cases
+- **Specificity** or True Negative Rate is the ratio of correct predictions of actual negative cases
 
 Specificity = TN / TN + FP
 
