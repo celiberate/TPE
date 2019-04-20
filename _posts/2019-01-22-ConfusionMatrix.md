@@ -11,6 +11,7 @@ image:
 ---
 
 <i>{{ page.quote }}</i>
+
 https://www.youtube.com/watch?v=OAl6eAyP-yo
 
 Business Metric != Model Metric
