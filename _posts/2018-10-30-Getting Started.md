@@ -88,6 +88,7 @@ These are some of the online resources which I referred to..will keep updating i
 
   - Linear Algebra MIT 18.06 - by gilbert strang
   - Andrew Ng course on machine learning
+  - Python - Youtube videos by Corey Schafer
   - EDA - Exploratory Data analysis
     - https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
     - 

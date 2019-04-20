@@ -18,11 +18,7 @@ Let say we have a predictor variable "Status" with values ['Y' , 'N' , 'NA']. No
 ![Initial dataframe]({{site.url}}/images/assets/labelencoding/initial.png)
 
 
-There are two ways we can handle this using Scikit Learn library. As an alternative, we can choose to provide our own implementation, if required.
-
-**Label encoding**  - This is like in-place encoding where unique values in the columns are replaced with respective unique ordered numerical values. so all 'N' gets replaced with 0, all 'Y' gets replaced with 1 and all 'NA' gets replaced with '2' etc.
-   
-This doesn't create new columns in the dataframe and does encoding in-place. However, it may lead to believe that there is some kind of order within the values. so, the other way is to do one-hot encoding
+**Label encoding**  - This is like in-place encoding where unique values in the columns are replaced with respective unique ordered numerical values. so all 'N' gets replaced with 0, all 'Y' gets replaced with 1 and all 'NA' gets replaced with '2' etc. scikit learn comes with a LabelEncoder class, as part of preprocessing module to do label encodings.
 
 ```
 from sklearn import preprocessing
@@ -33,12 +29,23 @@ label_encoder.fit(df)
 y = label_encoder.transform(df)
 ```
 ![labelendoded dataframe]({{site.url}}/images/assets/labelencoding/labelencoding.png)
+
+   
+This doesn't create new columns in the dataframe and does encoding in-place. However, it may lead to confusion that there is some kind of order within the values. so, the other way is to do one-hot encoding
+
    
 **One-hot encoding** - To avoid the column being interpreted as ordinal variable, we instead do one-hot encoding. Here, categorical columns is split into multiple columns, one for each label, and labels are replaced with 1s or 0s, assigning 1 to label assigned for that column and 0 for all other labels
    
 Status column will get 3 new columns as Status_Y, Status_N and Status_NA columns. Status_Y will have 1 for all 'Y' values and 0 for all rest values. similarly, Status_N will have 1 for all 'N' values and 0 for rest.
 
+
+Pandas get_dummies() method convert categorical variable into dummy/indicator variables
+
+```
+    test_status = pd.get_dummies(status)
+```
 ![1hot dataframe]({{site.url}}/images/assets/labelencoding/onehotencoding.png)
+
 
 <!-- Random Distribution vs Gaussian Distribution
 Normal Curve - Probabilistic Distribution
